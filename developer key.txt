@@ -1,0 +1,7 @@
+Api Key
+Here is your developer key for using the Goodreads API. This key must be appended to every request using the form variable 'key'. (If you're using our write API, you'll need your secret too.)
+
+key: 6J2YedcLDkE0Q79yxkZw
+secret: 5jKrVOUdKGKRcQixDstoZEzatilba74QmDpr8rKQvuo
+
+db URI: postgres://atpuetevopnixs:9b0079d0c3676d2ac0af2dbbae4b350784f27fffbd7138389ef26055ffc20fd3@ec2-54-217-204-34.eu-west-1.compute.amazonaws.com:5432/da2kvo8bd5bnib
