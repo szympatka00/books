@@ -12,6 +12,7 @@ Flask-Session = "*"
 SQLAlchemy = "*"
 gunicorn = "*"
 python-dotenv = "*"
+flask-sqlalchemy = "*"
 
 [requires]
 python_version = "3.6"
