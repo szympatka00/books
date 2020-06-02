@@ -25,5 +25,21 @@ db = scoped_session(sessionmaker(bind=engine))
 def index():
     return "Project 1: TODO"
 
+@app.route("/register")
+
+@app.route("/login")
+
+@app.route("/logout")
+
+@app.route("/dashboard")
+
+@app.route("/register")
+# page where they can search for a book. Users should be able to type in the ISBN number of a book,
+#the title of a book, or the author of a book. After performing the search, your website should display
+#a list of possible matching results, or some sort of message if there were no matches. If the user typed
+#in only part of a title, ISBN, or author name, your search page should find matches for those as well!
+
+@app.route("/book")
+
 if __name__ == '__main__':
     main()
