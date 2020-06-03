@@ -23,13 +23,13 @@ db = scoped_session(sessionmaker(bind=engine))
 
 @app.route("/")
 def index():
-    return "Project 1: TODO"
+    return render_template("index.html")
 
-@app.route("/register")
+@app.route("/register", methods=["POST"])
 def register():
     return "Register"
 
-@app.route("/login")
+@app.route("/login", methods=["GET"])
 def login():
     return "Login"
 
@@ -41,7 +41,7 @@ def logout():
 def dashboard():
     return "Dashboard"
 
-@app.route("/book")
+@app.route("/book/<int:ISBN>")
 def book():
     return "book"
 # page where they can search for a book. Users should be able to type in the ISBN number of a book,
