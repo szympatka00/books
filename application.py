@@ -26,20 +26,28 @@ def index():
     return "Project 1: TODO"
 
 @app.route("/register")
+def register():
+    return "Register"
 
 @app.route("/login")
+def login():
+    return "Login"
 
 @app.route("/logout")
+def logout():
+    return "Logout"
 
 @app.route("/dashboard")
+def dashboard():
+    return "Dashboard"
 
-@app.route("/register")
+@app.route("/book")
+def book():
+    return "book"
 # page where they can search for a book. Users should be able to type in the ISBN number of a book,
 #the title of a book, or the author of a book. After performing the search, your website should display
 #a list of possible matching results, or some sort of message if there were no matches. If the user typed
 #in only part of a title, ISBN, or author name, your search page should find matches for those as well!
-
-@app.route("/book")
 
 if __name__ == '__main__':
     main()
