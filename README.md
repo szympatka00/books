@@ -1,3 +1,3 @@
-# Project 1
+# Project - books
 
-Web Programming with Python and JavaScript
+pipenv install -requirements
