@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request #nie dziala, mysle to ze kwestia render template
+from flask import Flask
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -23,7 +23,7 @@ db = scoped_session(sessionmaker(bind=engine))
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return "index.html"
 
 @app.route("/register", methods=["POST"])
 def register():
